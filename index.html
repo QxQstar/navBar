@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>组件化导航条</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id="header">
+
+    </header>
+    <script src="index.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var cfg = {
+            data:{
+                "产品": [
+                    '缓温杯纳斯光泽',
+                    '缓温杯纳斯原版',
+                    '保温杯纯色光泽',
+                    '创意饰品'
+                ],
+                "服务":[
+                    '激光雕刻',
+                    '签约设计',
+                    '在线客服',
+                    '服务支持'
+                ]
+            },
+            linkHeight:180,
+            barHeight:60,
+            css:{
+                'background-color':"#000000",
+                'color':"#ffffff"
+            }
+        };
+        var navBar = new NavBar(cfg);
+        $("#header").append(navBar);
+    </script>
+</body>
+</html>
