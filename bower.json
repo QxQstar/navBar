@@ -1,0 +1,11 @@
+{
+  "name": "navBar",
+  "description": "'导航条'",
+  "main": "index.html",
+  "authors": [
+    "qincxiaoqian"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true
+}
